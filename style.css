@@ -4,8 +4,13 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
+body{
+    width: 100%;
+}
 :root{
     --black: #000;
     --gray: rgb(35, 35, 35);
@@ -47,12 +52,23 @@ nav{
     text-align: center;
 }
 
+.text{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 180px;
+    align-self: flex-start;
+    justify-self: start;
+    padding: 20px;
+}
 .bot{
     display: flex;
     flex-direction: row;
     align-self: center;
     justify-self: center;
 
+    padding: 40px;
     background-color: rgba(96, 96, 96, 0.382);
     background-image: url("images/Fondo-bot.PNG");
     background-repeat: no-repeat;

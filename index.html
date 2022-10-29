@@ -22,7 +22,18 @@
     </div>
 
     <div class="bot">
-      <img src="images/gif-bot.gif" alt="bot-saluda" />
+      <img src="images/gif-bot.gif" alt="bot-saluda" height="250px" />
+      <div class="text">
+        <h3>¡Conoce a Pablo!</h3>
+        <p>Nuestro asistente virtual innovador</p>
+        <p>
+          Gracias al equipo de desarrollo e innovación hemos realizado un
+          asistente virtual capaz de detectar si usted es candidato a desertar
+          su carrera universitaria o no. Esperamos que participe en esta
+          encuesta para poder mejorar la calidad de enseñanza de nuestra
+          universidad.
+        </p>
+      </div>
       <script>
         window.watsonAssistantChatOptions = {
           integrationID: "0ff3a390-ebd3-46b8-9134-2d8fdd3b9d98", // The ID of this integration.
@@ -38,7 +49,8 @@
             "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
             (window.watsonAssistantChatOptions.clientVersion || "latest") +
             "/WatsonAssistantChatEntry.js";
-          document.head.appendChild(t);
+
+          document.getElementsByClassName("bot")[0].appendChild(t);
         });
       </script>
     </div>
