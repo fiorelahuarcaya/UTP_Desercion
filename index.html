@@ -4,7 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Centro de Atención - UTP</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <img src="images/Logo.png" alt="" width="150px" />
+        <h3>Centro de Atención: UTP</h3>
+      </nav>
+      <h2 class="red">¿NECESITAS ALGÚN</h2>
+      <h2 class="black">TIPO DE AYUDA?</h2>
+    </header>
+    <div class="frase">
+      AYÚDANOS A AYUDARTE MEDIANTE NUESTRAS ESPECIALISTAS Y ACTIVIDADES
+    </div>
+
+    <div class="bot">
+      <img src="images/gif-bot.gif" alt="bot-saluda" />
+      <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "0ff3a390-ebd3-46b8-9134-2d8fdd3b9d98", // The ID of this integration.
+          region: "us-south", // The region your integration is hosted in.
+          serviceInstanceID: "1a097790-35cc-4f10-9df6-21585d032a0b", // The ID of your service instance.
+          onLoad: function (instance) {
+            instance.render();
+          },
+        };
+        setTimeout(function () {
+          const t = document.createElement("script");
+          t.src =
+            "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+            (window.watsonAssistantChatOptions.clientVersion || "latest") +
+            "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+    </div>
+  </body>
 </html>
