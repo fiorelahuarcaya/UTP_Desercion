@@ -21,8 +21,8 @@
       AYÚDANOS A AYUDARTE MEDIANTE NUESTRAS ESPECIALISTAS Y ACTIVIDADES
     </div>
 
-    <div class="bot">
-      <img src="images/gif-bot.gif" alt="bot-saluda" height="250px" />
+    <div class="bot" id="bot">
+      <img src="images/gif-bot.gif" alt="bot-saluda" height="350px" />
       <div class="text">
         <h3>¡Conoce a Pablo!</h3>
         <p>Nuestro asistente virtual innovador</p>
@@ -50,9 +50,28 @@
             (window.watsonAssistantChatOptions.clientVersion || "latest") +
             "/WatsonAssistantChatEntry.js";
 
-          document.getElementsByClassName("bot")[0].appendChild(t);
+          document.getElementById("bot").appendChild(t);
         });
       </script>
     </div>
+    <footer>
+      <img src="images/love.jpg" alt="" height="100px" />
+      <div class="items">
+        <h3>Contáctanos</h3>
+        <div class="item">
+          <h4>Correo:</h4>
+          <p>fiorela.ames.ramos@ayudautp.com</p>
+        </div>
+        <div class="item">
+          <h4>Teléfono:</h4>
+          <p>963147563</p>
+        </div>
+        <div class="item">
+          <h4>Horario:</h4>
+          <p>Lun - Vie: 8:30 a.m. a 8:00 p.m.</p>
+          <p>Sáb: 9:00 a.m. a 5:00 p.m</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

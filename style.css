@@ -27,7 +27,7 @@ header{
 
     padding: 20px 50px 100px 50px;
     /* min-height: 500px; */
-    background-image: url("images/header.jfif");
+    background-image: url("images/header.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -84,9 +84,21 @@ h2{
     font-size: 50px;
 }
 
+footer{
+    display: flex;
+    flex-direction:row;
+
+    justify-content: space-between;
+    padding: 64px 160px;
+}
+
+.items{
+    
+}
 .red{
     color: var(--red);
 }
 .black{
     color: var(--black);
 }
+
